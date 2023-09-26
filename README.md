@@ -22,7 +22,7 @@
 
 | Task | File |
 | ---- | ---- |
-| 0. Bubble sort | [](https://github.com/EricOnasis/sorting_algorithms/blob/main/0-bubble_sort.c) |
-| 1. Insertion sort | [SOON](./) |
-| 2. Selection sort | [SOON](./) |
-| 3. Quick sort | [SOON](./) |
+| 0. Bubble sort | [Bubble Sort](https://github.com/EricOnasis/sorting_algorithms/blob/main/0-bubble_sort.c) |
+| 1. Insertion sort | [Insertion sort](https://github.com/EricOnasis/sorting_algorithms/blob/main/1-insertion_sort_list.c) |
+| 2. Selection sort | [Selection sort](https://github.com/EricOnasis/sorting_algorithms/blob/main/2-selection_sort.c) |
+| 3. Quick sort | [Quick sort](https://github.com/EricOnasis/sorting_algorithms/blob/main/3-quick_sort.c) |
