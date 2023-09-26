@@ -21,3 +21,16 @@ void print_array(const int *array, size_t size)
 	}
 	printf("\n");
 }
+
+/**
+ * swap - swap values
+ * @a: value a
+ * @b: value b
+ */
+void swap(int *a, int *b)
+{
+	int tmp = *b;
+
+	*b = *a;
+	*a = tmp;
+}
