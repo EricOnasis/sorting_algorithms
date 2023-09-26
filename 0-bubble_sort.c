@@ -1,35 +1,34 @@
 #include "sort.h"
 
 /**
- * bubble_sort - sorts an array using bubble sort Algo
- * @array: the array to sort
- * @size: size of the array
+ *bubble_sort - Function that sorts an array of int
+ *using bubble sort algo
+ *
+ *@array: the array of ints
+ *@size: size of array
+ *
  */
 void bubble_sort(int *array, size_t size)
 {
-	size_t i, j, x;
+	int temp;
+	size_t i, k;
 
-	if (size >= 2)
+	if (!array || !size)
+		return;
+
+	i = 0;
+	while (i < size)
 	{
-		for (i = 0; i < size - 1; i++)
+		for (k = 0; k < size - 1; k++)
 		{
-			for (j = 0; j < size - 1 - i; j++)
+			if (array[k] > array[k + 1])
 			{
-				if (array[j] > array[j + 1])
-				{
-					swap(&array[j], &array[j + 1]);
-					for (x = 0; x < size; x++)
-					{
-					printf("%d", array[x]);
-					if (x != size - 1)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-					}
-					putchar('\n');
-				}
+				temp = array[k];
+				array[k] = array[k + 1];
+				array[k + 1] = temp;
+				print_array(array, size);
 			}
 		}
+		i++;
 	}
 }
