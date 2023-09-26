@@ -27,6 +27,10 @@ void swap(listint_t *a, listint_t *b);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
+int separate(int *array, int one, int end, size_t size);
+void recursive_sort(int *array, int one, int end, size_t size);
+void quick_sort(int *array, size_t size);
+
 
 
 #endif
